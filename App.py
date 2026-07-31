@@ -131,7 +131,7 @@ if all(ALL_API) and user_query:
       with st.spinner("Running Agent.."):
         data = f"https://image.pollinations.ai/{user_query}"
         import requests as r
-        image.data=r.get(data)
+        img_data=r.get(data)
         st.image(data)
         # st.image("Image.jpeg")
         # st.rerun() 
